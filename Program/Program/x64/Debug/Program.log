@@ -1,2 +1,4 @@
 ﻿  Source.c
+C:\Users\이시원\Desktop\1\Program\Source.c(24,9): warning C4477: 'printf' : 서식 문자열 '%f'에 'double' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
+C:\Users\이시원\Desktop\1\Program\Source.c(28,9): warning C4477: 'printf' : 서식 문자열 '%f'에 'double' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
   Program.vcxproj -> C:\Users\이시원\Desktop\1\Program\x64\Debug\Program.exe

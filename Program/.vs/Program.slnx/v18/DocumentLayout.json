@@ -7,6 +7,9 @@
       "RelativeMoniker": "D:0:0:{CA7883C1-35F7-443E-A805-EF62019874E8}|Program.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AC280D45-8168-45EA-96A1-FAC691CCA2EC}|..\\Class2nd(Variable\u0026Constant)\\Class2nd(Variable\u0026Constant).vcxproj|C:\\Users\\\uC774\uC2DC\uC6D0\\Desktop\\1\\Class2nd(Variable\u0026Constant)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DA58105B-EED7-49F0-BB35-9C395FC0C5AB}|..\\Class 1st(Compile)\\Class 1st(Compile).vcxproj|C:\\Users\\\uC774\uC2DC\uC6D0\\Desktop\\1\\Class 1st(Compile)\\source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -17,11 +20,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Source.c",
+              "DocumentMoniker": "C:\\Users\\\uC774\uC2DC\uC6D0\\Desktop\\1\\Class2nd(Variable\u0026Constant)\\Source.c",
+              "RelativeDocumentMoniker": "..\\Class2nd(Variable\u0026Constant)\\Source.c",
+              "ToolTip": "C:\\Users\\\uC774\uC2DC\uC6D0\\Desktop\\1\\Class2nd(Variable\u0026Constant)\\Source.c",
+              "RelativeToolTip": "..\\Class2nd(Variable\u0026Constant)\\Source.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-12-12T11:35:18.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "source.c",
               "DocumentMoniker": "C:\\Users\\\uC774\uC2DC\uC6D0\\Desktop\\1\\Class 1st(Compile)\\source.c",
               "RelativeDocumentMoniker": "..\\Class 1st(Compile)\\source.c",
@@ -40,7 +56,7 @@
               "RelativeDocumentMoniker": "Source.c",
               "ToolTip": "C:\\Users\\\uC774\uC2DC\uC6D0\\Desktop\\1\\Program\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-12-10T12:22:04.242Z",
               "EditorCaption": ""
