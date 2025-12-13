@@ -14,7 +14,7 @@ void main()
 	// int x = 0;
 
 	//const int A = 7;
-	//const float B = 2.75f;
+	//const int B = 5;
 	//int a = 12;
 	//int b = 16;
 	
