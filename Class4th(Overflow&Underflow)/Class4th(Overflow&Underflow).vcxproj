@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ac280d45-8168-45ea-96a1-fac691cca2ec}</ProjectGuid>
-    <RootNamespace>Class2ndVariableConstant</RootNamespace>
+    <ProjectGuid>{b7ed9ff1-b98a-496f-b721-58971b1c6447}</ProjectGuid>
+    <RootNamespace>Class4thOverflowUnderflow</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Class2nd (Variable&amp;Constant)</ProjectName>
+    <ProjectName>Class4th (Overflow&amp;Underflow)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
