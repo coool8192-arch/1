@@ -1,2 +1,2 @@
 ﻿  source.c
-  Program.vcxproj -> C:\Users\이시원\Desktop\1\Program\x64\Debug\Program.exe
+C:\Users\이시원\Desktop\1\Program\source.c(190,17): error C2106: '=': 왼쪽 피연산자는 l-value이어야 합니다.
