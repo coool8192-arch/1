@@ -8,5 +8,6 @@
   <Project Path="../Class3rd(Bit)/Class3rd(Bit).vcxproj" Id="c89ce7fe-da16-47c8-ac58-d938623fcd6b" />
   <Project Path="../Class4th(Overflow&amp;Underflow)/Class4th(Overflow&amp;Underflow).vcxproj" Id="b7ed9ff1-b98a-496f-b721-58971b1c6447" />
   <Project Path="../Class5th (Conditional Statement)/Class5th (Conditional Statement).vcxproj" Id="2779db68-370e-41d7-a5bc-e38db89f10a4" />
+  <Project Path="../Class6th (Iteration Statement)/Class6th (Iteration Statement).vcxproj" Id="d14aedde-57ed-4df6-baa9-aeaf6dd01416" />
   <Project Path="Program.vcxproj" Id="ca7883c1-35f7-443e-a805-ef62019874e8" />
 </Solution>
