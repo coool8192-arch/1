@@ -40,36 +40,111 @@ void main()
 #pragma region 포인터
 	// 메모리의 주소 값을 저장할 수 있는 변수입니다.
 
-	int storage = 10;
+	//int storage = 10;
+	//
+	//int* pointer = &storage;
+	//
+	//// 포인터가 가리키는 메모리 공간의 자료형은 알 수 없으므로
+	//// 이를 선언해주어야 합니다.
+	//
+	//printf("%p\n", &storage);
+	//
+	//printf("%p\n", pointer);
+	//
+	//printf("%p\n", &pointer);
+	//
+	//*pointer = 99;
+	//
+	//printf("%d\n", storage);
+	//
+	//printf("%d\n", *pointer);
+	//
+	//int room = 20;
+	//
+	//pointer = &room;
+	//
+	//*pointer = 77;
+	//
+	//printf("%d\n", room);
+	//
+	//printf("%p\n", &room);
+	//
+	//printf("%p\n", pointer);
+	//
+	//// 포인터 변수도 자신의 메모리 공간을 가지고 있으며, 포인터 변수의
+	//// 주소를 저장하게 되면 해당 변수의 시작 주소를 가리킵니다.
+	//
+	//printf("%u\n", sizeof(int));
+	//
+	//printf("%u\n", sizeof(pointer));
 
-	int* pointer = &storage;
+	// 포인터 변수의 크기는 중앙 처리 장치가 한 번에 처리할 수 있는
+	// 크기로 정해지며, 그 크기는 운영체제에 따라 결정됩니다.
+#pragma endregion
 
-	// 포인터가 가리키는 메모리 공간의 자료형은 알 수 없으므로
-	// 이를 선언해주어야 합니다.
+#pragma region 범용 포인터
+	// 자료형이 정해지지 않은 상태로 모든 자료형을
+	// 저장할 수 있는 포인터입니다.
 
-	printf("%p\n", &storage);
+	//char name = 'P';
+	//
+	//int level = 10;
+	//
+	//float AS = 3.3f;
+	//
+	//void* reference = &name;
 
-	printf("%p\n", pointer);
+	// 범용 포인터는 메모리 주소에 접근해서
+	// 값을 변경할 수 없습니다.
 
-	printf("%p\n", &pointer);
+	//printf("%p\n", &name);
+	//printf("%p\n", reference);
+	//
+	//*(char*)reference = 'Q';
+	//
+	//printf("name : %c\n", name);
+	//printf("name : %c\n", *(char*)reference);
+	//
+	//reference = &level;
+	//
+	//printf("%p\n", &level);
+	//printf("%p\n", reference);
+	//
+	//*(int*)reference = 20;
+	//
+	//printf("level : %d\n", level);
+	//printf("level : %d\n", *(int*)reference);
+	//
+	//reference = &AS;
+	//
+	//printf("%p\n", &AS);
+	//printf("%p\n", reference);
+	//
+	//*(float*)reference = 4.2f;
+	//
+	//printf("AS : %f\n", AS);
+	//printf("AS : %f\n", *(float*)reference);
 
-	*pointer = 99;
+	// 범용 포인터로 변수의 메모리에 접근하려면 범용 포인터가
+	// 가리키는 변수의 자료형으로 변환해주어야 합니다.
 
-	printf("%d\n", storage);
+#pragma endregion
 
-	printf("%d\n", *pointer);
+#pragma region 상수 지시 포인터
+	// 포인터가 가리키는 주소에 저장된 값을 변경할 수 없도록
+	// 지정되어 있는 포인터입니다.
 
-	int room = 20;
+	int x = 10;
+	const int* fixedpointer = &x;
+	//*fixedpointer = 20;
 
-	pointer = &room;
-
-	*pointer = 77;
-
-	printf("%d\n", room);
-
-	printf("%p\n", &room);
-
-	printf("%p\n", pointer);
+	printf("x의 주소 : %p\n", &x);
+	printf("fixedpointer의 값 : %p\n", fixedpointer);
+	int y = 15;
+	fixedpointer = &y;
+	
+	printf("y의 주소 : %p\n", &y);
+	printf("fixedpointer의 값 : %p\n", fixedpointer);
 
 #pragma endregion
 
