@@ -1,123 +1,73 @@
 #include <stdio.h>
 
+void initialize()
+{
+	printf("initialize\n");
+}
+
+void coordinate(int x, int y)
+{
+	printf("x : %d\ny : %d\n", x, y);
+}
+
+void reset(char grade, int level, float experience)
+{
+	printf("grade : %c\nlevel : %d\nexp : %f\n", grade, level, experience);
+}
+
+void swap(int*a, int*b)
+{
+	int*t = a;
+	a = b;
+	b = t;
+}
 void main()
 {
-#pragma region 배열
-	// 같은 자료형의 변수들로 이루어진 유한집합입니다.
+#pragma region 함수
+	// 하나의 특별한 목적의 작업을 수행하기 위해
+	// 독립적으로 설계된 코드의 집합입니다.
 
-	//int x[5];
-
-	// 배열의 원소는 1이 아니라 0을 첫 번째 원소로 합니다.
-
-
-	//for (int i = 0; i < 5; i++)
-	//{
-	//	x[i] = (i + 1) * 10;
-	//
-	//	printf("x[%d] : %d\n", i, x[i]);
-	//}
-
-	// 배열의 메모리 공간은 프로그램이 실행되는 동안
-	// 변경할 수 없습니다.
-
-	//int a[] = { 10,20,30,40,50 };
-	//
-	//int size = sizeof(a) / sizeof(a[0]);
-	//
-	//for (int i = 0; i < size; i++)
-	//{
-	//	printf("a[%d] : %d\n", i, a[i]);
-	//}
-
-	// 배열의 크기는 생략할 수 있으며, 초기화 목록에서
-	// 설정한 요소에 따라 배열의 크기가 결정됩니다.
-
-	//int* pointer = &a;
-	//
-	//printf ("%d\n", *pointer);
-	//printf("%d\n", a[0]);
-	//
-	//pointer += 1;
-	//
-	//*pointer = 22;
-	//
-	//printf ("%d\n", *pointer);
-	//printf ("%d\n", a[1]);
-
-	// 배열은 연속적인 메모리 공간을 가지며, 배열의 이름은
-	// 배열의 시작 주소를 가리킵니다.
+	//initialize();
 
 #pragma endregion
 
-#pragma region 문자열
-	// 연속적인 메모리 공간에 저장된 문자 변수의 집합입니다.
+#pragma region 매개변수
+	// 함수의 정의에서 전달받은 인수를 함수 내부로
+	// 전달하기 위해 사용하는 변수입니다.
 
-	//const char* character="archer";
-	//
-	//printf("%c\n", *character);
-	//printf("%p\n", character);
-	//printf("%s\n", character);
-	//
-	//character = "mage";
-	//
-	//printf("%s\n", character);
-	//
-	//char username[] = "username";
-	//
-	//printf("%s\n", username);
-	//
-	//username[1] = 'a';
-	//
-	//printf("%s\n", username);
+	//coordinate(15, 24);
 
-	// 문자열은 포인터를 이용하여 문자열 상수를 가리키도록 할 수 있으며, 
-	// 문자열 상수는 데이터 영역의 읽기 전용 공간에 저장되므로 문자열의 값을 변경할 수 없습니다.
+	// 매개변수는 함수 내부에서만 연산이 이루어지며,
+	// 함수가 종료되면 메모리에서 해제됩니다.
 
-	// 문자열은 공백을 포함하여 메모리 공간의 크기가 결정되며,
-	// 마지막에 문자열의 끝을 알려주는 제어 문자가 추가됩니다.
+	// 하나의 함수에 서로 다른 자료형의 매개변수를 함께
+	// 정의할 수 있으며, 여러 개의 매개변수를 생성할 수 있습니다.
 
-	//character = "show\0er";
-	//
-	//printf("%s\n", character);
-
-	// 문자열의 경우 연속된 메모리 공간으로 연결되어 있지만,
-	// 중간에 무효인 문자를 넣게 되면 해당하는 문자까지만 출력됩니다.
-
+	//reset('A', 30, 12.25f);
 #pragma endregion
 
-#pragma region (2)차원 배열
-	// 배열의 요소로 또다른 배열을 갖는 배열입니다.
+#pragma region 인수
+	// 함수가 호출될 때 매개변수에 실제로 전달되는 값입니다.
 
-	//int a2[3][3] =
-	//{
-	//	{1,2,3},{4,5,6},{7,8,9},
-	//};
+	// 인수의 경우 함수에 있는 매개변수에 따라 전달할 수 있는
+	// 인수의 수가 결정되며, 값을 전달하는 인수와
+	// 전달받는 매개변수의 자료형이 일치해야 합니다.
+
+	int m = 10;
+	int n = 20;
+
+	//int u = m;
 	//
-	//for (int i = 0; i < 3; i++)
-	//{
-	//	for (int j = 0; j < 3; j++)
-	//	{
-	//		printf("%d", a2[i][j]);
-	//	}
-	//	printf("\n");
-	//}
-
-	// 2차원 배열은 행과 열로 구분되며, 앞의 배열이 열, 뒤의 배열이 행입니다.
-
-
-#pragma endregion
-
-#pragma region 아스키 코드
-	// 미국 구립 표준 협회에서 표준화한 정보 교환용 7비트 부호 체계입니다.
-	
-	//char a = 'A';
+	//m = n;
 	//
-	//printf("%d\n", a);
-	//
-	//for (a = 'A'; a <= 'Z'; a++)
-	//{
-	//	printf("%c", a);
-	//}
+	//n = u;
+
+	printf("m : %d\nn : %d\n", m, n);
+
+	swap(m, n);
+
+	printf("m : %d\nn : %d\n", m, n);
+
 #pragma endregion
 
 }
