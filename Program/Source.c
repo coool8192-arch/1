@@ -15,12 +15,48 @@ void reset(char grade, int level, float experience)
 	printf("grade : %c\nlevel : %d\nexp : %f\n", grade, level, experience);
 }
 
-void swap(int*a, int*b)
+void swap(int* a, int* b)
 {
-	int*t = a;
-	a = b;
-	b = t;
+	int t = *a;
+	*a = *b;
+	*b = t;
 }
+
+int absolute(int x)
+{
+	//if (x >= 0)
+	//{
+	//	return x;
+	//}
+	//else
+	//{
+	//	return -x;
+	//}
+	(x > 0) ? x : -x;
+}
+
+void function(int x)
+{
+	//printf("%d\n", x);
+	//x--;
+	//if (x > 0)
+	//{
+	//	function(x);
+	//}
+	if (x <= 0)
+	{
+		return;
+	}
+	printf("%d\n", x);
+
+	function(x - 1);
+}
+
+inline int square(int x)
+{
+	return x * x;
+}
+
 void main()
 {
 #pragma region 함수
@@ -53,8 +89,8 @@ void main()
 	// 인수의 수가 결정되며, 값을 전달하는 인수와
 	// 전달받는 매개변수의 자료형이 일치해야 합니다.
 
-	int m = 10;
-	int n = 20;
+	//int m = 10;
+	//int n = 20;
 
 	//int u = m;
 	//
@@ -62,11 +98,48 @@ void main()
 	//
 	//n = u;
 
-	printf("m : %d\nn : %d\n", m, n);
+	//printf("m : %d\nn : %d\n", m, n);
+	//
+	//swap(&m, &n);
+	//
+	//printf("m : %d\nn : %d\n", m, n);
 
-	swap(m, n);
+#pragma endregion
 
-	printf("m : %d\nn : %d\n", m, n);
+#pragma region 반환형
+	// 함수가 실행을 마치고 호출한 쪽으로
+	// 어떤 자료형의 값을 반환할지 미리 알려주는 형식입니다.
+
+	//int x = 50;
+	//int y = -36;
+	//
+	//printf("x의 절댓값 : %d\n", absolute (x));
+	//printf("y의 절댓값 : %d\n", absolute(y));
+	//printf("절댓값 : %d\n", absolute (-5));
+
+	// 함수의 경우 자료형과 반환하는 값의 형태가
+	// 일치하지 않으면 원하는 값을 얻을 수 없습니다.
+
+#pragma endregion
+
+#pragma region 재귀함수
+	// 어떤 함수에서 자신을 다시 호출하여 작업을 수행하는 함수입니다.
+
+	//function(3);
+
+	// 재귀함수는 함수를 계속 호출하기 때문에 스택 영역에
+	// 메모리가 계속 쌓이게 되어 스택 오버플로우가 발생합니다.
+
+#pragma endregion
+
+#pragma region 인라인 함수
+	// 함수를 호출하는 대신 함수가 호출되는 위치마다
+	// 함수의 코드를 복사해 전달하는 함수입니다.
+
+	printf("%d\n", square(3));
+
+	// 인라인 함수는 함수를 호출하는 과정이 없어 처리 속도가 빠르지만,
+	// 사용할 때마다 코드가 복사되어 파일의 크기가 커지게 됩니다.
 
 #pragma endregion
 
