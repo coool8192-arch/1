@@ -1,3 +1,2 @@
 ﻿  source.c
-C:\Users\이시원\Desktop\1\Program\source.c(36,1): warning C4716: 'absolute': 값을 반환해야 합니다.
   Program.vcxproj -> C:\Users\이시원\Desktop\1\Program\x64\Debug\Program.exe
