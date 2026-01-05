@@ -1,27 +1,33 @@
 #include <stdio.h>
-#include<stdlib.h>
 
-void main()
+struct enemy
 {
-#pragma region 동적 할당
-	// 프로그램을 실행하는 중에 필요한 만큼 메모리를 할당하는 작업입니다.
+	char Rarity;
+	int HP;
+	double EXP;
+};
 
-	int* pointer = malloc(sizeof(int));
+int main()
+{
+#pragma region 구조체
+	// 여러 개의 변수를 하나의 집합으로 구조화하여 하나의 객체를 생성하는 것입니다.
 
-	*pointer = 99;
+	//struct enemy slime = { 'D', 10, 2.25 };
+	//
+	//printf("green slime\nRarity : %c\nHP : %d\nEXP : %f\n\n", slime.Rarity, slime.HP, slime.EXP);
+	
+	// 구조체의 멤버 변수는 선언 시의 순서대로 초기화되며,
+	// 초기화 목록의 값에서 왼쪽에서 오른쪽으로 표시됩니다.
 
-	printf("%d\n", *pointer);
-
-	free(pointer);
-
-	printf("%d\n", *pointer);
-
-	// 동적 할당은 실행 시간에 가변적으로 메모리의 크기를 변경할 수 있으며,
-	// 동적으로 메모리의 크기를 할당할 때 바이트 단위로 지정합니다.
-
-	// 동적으로 할당한 메모리는 HEAP 영역에 보관되므로,
-	// 사용이 끝나면 직접 해제해야 합니다.
+	// 구조체는 선언하기 전에는 메모리 공간이 생성되지 않아 내부의 데이터를 초기화할 수 있습니다.
+	 
+	//slime.Rarity = 'C';
+	//slime.HP = 25;
+	//slime.EXP = 4.625;
+	//
+	//printf("blue slime\nRarity : %c\nHP : %d\nEXP : %f\n", slime.Rarity, slime.HP, slime.EXP);
 
 #pragma endregion
 
+	return 0;
 }
